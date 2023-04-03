@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+.root {
+  --box-shadow-color: gray;
+}
+
+.site-wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: rgb(182, 27, 13);
+  color: white;
+  text-align: center;
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 2rem;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+.nav-bar {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+.nav-bar div{
+  flex: 1;
+  text-align: center;
+}
+
+.nav-bar div:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+.nav-bar div:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 100ms;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 900px;
+  border: 1px solid black;
+  background-color: rgb(255, 251, 238);
+  z-index: 99;
+}
+
+.hidden {
+  display: none;
+}
+
+.chevron {
+  transition: transform 300ms;
+}
+
+.opened {
+  transition: transform 300ms;
+  transform: rotate(180deg);
+}
+
+.active-button {
+  font-weight: 700;
+}
