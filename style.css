@@ -43,6 +43,7 @@ header {
 .nav-bar div:hover {
   cursor: pointer;
   text-decoration: underline;
+  text-underline-offset: 8px;
   transition: 100ms;
 }
 
